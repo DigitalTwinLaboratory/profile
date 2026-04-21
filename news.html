@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Liberté フランチャイズ加盟店オーナー向けのお知らせ・最新情報ページ。" />
+  <title>加盟店へのお知らせ | Liberté FC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="news.css" />
+</head>
+<body>
+
+  <!-- ===== BACK BUTTON ===== -->
+  <a href="index.html" class="back-btn" id="back-btn" aria-label="トップページへ戻る">
+    <span class="back-arrow">←</span>
+    <span>TOP</span>
+  </a>
+
+  <!-- ===== PAGE HEADER ===== -->
+  <header class="page-header" id="page-header">
+    <div class="header-bg-orb header-bg-orb--1"></div>
+    <div class="header-bg-orb header-bg-orb--2"></div>
+    <div class="header-inner">
+      <div class="header-logo-wrap">
+        <img src="images/logo.png" alt="Liberté ロゴ" class="header-logo" />
+      </div>
+      <div class="header-label">
+        <span class="header-label-en">MEMBER NOTICES</span>
+        <h1 class="header-title-ja">加盟店へのお知らせ</h1>
+        <p class="header-subtitle">オーナー様向けの最新情報・重要連絡をお届けします</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== FILTER TABS ===== -->
+  <div class="filter-bar" id="filter-bar" role="tablist" aria-label="カテゴリフィルター">
+    <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true" id="tab-all">すべて</button>
+    <button class="filter-btn" data-filter="important" role="tab" aria-selected="false" id="tab-important">🔴 重要</button>
+    <button class="filter-btn" data-filter="info" role="tab" aria-selected="false" id="tab-info">📘 お知らせ</button>
+    <button class="filter-btn" data-filter="event" role="tab" aria-selected="false" id="tab-event">🎉 イベント</button>
+    <button class="filter-btn" data-filter="update" role="tab" aria-selected="false" id="tab-update">🔧 アップデート</button>
+  </div>
+
+  <!-- ===== MAIN NEWS LIST ===== -->
+  <main class="news-main" id="news-main">
+
+    <!-- Pinned Important Notice -->
+    <article class="news-card news-card--pinned reveal" data-category="important" id="notice-001">
+      <div class="news-pin-badge">📌 重要</div>
+      <div class="news-card-inner">
+        <div class="news-meta">
+          <time class="news-date" datetime="2026-04-20">2026年4月20日</time>
+          <span class="news-tag news-tag--important">重要</span>
+        </div>
+        <h2 class="news-title">【必読】FC契約更新手続きのご案内（2026年度）</h2>
+        <p class="news-excerpt">
+          2026年度のフランチャイズ契約更新手続きについてご案内いたします。対象のオーナー様は期限内にご対応ください。詳細はLINEグループにてご共有しております。
+        </p>
+        <div class="news-footer">
+          <span class="news-read-more">続きを読む →</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Event card -->
+    <article class="news-card reveal" data-category="event" id="notice-002">
+      <div class="news-card-inner">
+        <div class="news-meta">
+          <time class="news-date" datetime="2026-04-15">2026年4月15日</time>
+          <span class="news-tag news-tag--event">イベント</span>
+        </div>
+        <h2 class="news-title">2026年度 加盟店オーナー研修会のご案内</h2>
+        <p class="news-excerpt">
+          今年度の研修会を大阪・東京の2会場にて開催いたします。最新の機器操作研修・集客施策のシェア会を予定しております。ぜひご参加ください。
+        </p>
+        <div class="news-footer">
+          <span class="news-badge-date">📅 開催予定：2026年5月24日（土）</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Info card -->
+    <article class="news-card reveal" data-category="info" id="notice-003">
+      <div class="news-card-inner">
+        <div class="news-meta">
+          <time class="news-date" datetime="2026-04-10">2026年4月10日</time>
+          <span class="news-tag news-tag--info">お知らせ</span>
+        </div>
+        <h2 class="news-title">春のキャンペーン素材を配布いたします</h2>
+        <p class="news-excerpt">
+          4月〜5月の集客強化に向けた販促素材（SNS投稿用画像・チラシPDF）をご用意しました。LINEグループよりダウンロードしてご活用ください。
+        </p>
+        <div class="news-footer">
+          <span class="news-read-more">ダウンロードはこちら →</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Update card -->
+    <article class="news-card reveal" data-category="update" id="notice-004">
+      <div class="news-card-inner">
+        <div class="news-meta">
+          <time class="news-date" datetime="2026-04-01">2026年4月1日</time>
+          <span class="news-tag news-tag--update">アップデート</span>
+        </div>
+        <h2 class="news-title">予約管理システム v3.2 リリースのお知らせ</h2>
+        <p class="news-excerpt">
+          予約管理システムがアップデートされました。新機能として「回数券管理」「LINEリマインド自動送信」が追加されています。マニュアルはポータルサイトをご確認ください。
+        </p>
+        <div class="news-footer">
+          <span class="news-read-more">マニュアルを確認 →</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Info card -->
+    <article class="news-card reveal" data-category="info" id="notice-005">
+      <div class="news-card-inner">
+        <div class="news-meta">
+          <time class="news-date" datetime="2026-03-25">2026年3月25日</time>
+          <span class="news-tag news-tag--info">お知らせ</span>
+        </div>
+        <h2 class="news-title">Googleビジネスプロフィールの登録・更新をお願いします</h2>
+        <p class="news-excerpt">
+          集客効果向上のため、Googleビジネスプロフィールへの写真追加・営業時間更新を推奨しております。設定方法はLINEグループの資料をご参照ください。
+        </p>
+        <div class="news-footer">
+          <span class="news-read-more">詳細を確認 →</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Update card -->
+    <article class="news-card reveal" data-category="update" id="notice-006">
+      <div class="news-card-inner">
+        <div class="news-meta">
+          <time class="news-date" datetime="2026-03-18">2026年3月18日</time>
+          <span class="news-tag news-tag--update">アップデート</span>
+        </div>
+        <h2 class="news-title">脱毛機器メンテナンス手順の改訂について</h2>
+        <p class="news-excerpt">
+          機器の安全な運用を維持するため、日常メンテナンス手順書を改訂しました。旧手順書と異なる点がありますので、全オーナー様・スタッフ様にご確認をお願いします。
+        </p>
+        <div class="news-footer">
+          <span class="news-read-more">改訂版を確認 →</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Event card -->
+    <article class="news-card reveal" data-category="event" id="notice-007">
+      <div class="news-card-inner">
+        <div class="news-meta">
+          <time class="news-date" datetime="2026-03-10">2026年3月10日</time>
+          <span class="news-tag news-tag--event">イベント</span>
+        </div>
+        <h2 class="news-title">加盟店間交流会（オンライン）を開催しました</h2>
+        <p class="news-excerpt">
+          3月の交流会には20店舗以上のオーナー様にご参加いただきました。当日の資料・録画はLINEグループにてご提供しております。ありがとうございました。
+        </p>
+        <div class="news-footer">
+          <span class="news-badge-date">✅ 開催済み</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Empty state (hidden by default, shown when no results) -->
+    <div class="empty-state" id="empty-state" style="display:none;" aria-live="polite">
+      <div class="empty-icon">🔍</div>
+      <p class="empty-text">該当するお知らせはありません</p>
+    </div>
+
+  </main>
+
+  <!-- ===== CTA SECTION ===== -->
+  <section class="news-cta reveal" id="news-cta">
+    <div class="cta-inner">
+      <p class="cta-label">お困りのことがあれば</p>
+      <h2 class="cta-heading">本部へお気軽にご連絡ください</h2>
+      <p class="cta-desc">LINEグループもしくはメールにてご連絡いただけます。<br />オーナー様からのご質問・ご要望をお待ちしております。</p>
+      <div class="cta-buttons">
+        <a href="#" class="cta-btn cta-btn--line" id="cta-line-btn">
+          <span class="cta-btn-icon">💬</span>
+          <span>LINEで連絡する</span>
+        </a>
+        <a href="#" class="cta-btn cta-btn--mail" id="cta-mail-btn">
+          <span class="cta-btn-icon">✉️</span>
+          <span>メールで連絡する</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="news-footer" id="news-footer">
+    <img src="images/logo.png" alt="Liberté" class="footer-logo" />
+    <p class="footer-text">
+      ※株式会社4410は Liberté直営店とパーソナルジムを運営<br />
+      ※株式会社ViliVは Libertéフランチャイズ本部を運営<br /><br />
+      © 2024 Liberté Franchise. All rights reserved.
+    </p>
+  </footer>
+
+  <script src="news.js"></script>
+</body>
+</html>
