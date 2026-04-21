@@ -3,193 +3,183 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Liberté フランチャイズ FC本部代表 髙橋嘉人のプロフィールページ。株式会社ViliV・株式会社4410 代表取締役。" />
-  <title>髙橋 嘉人 | 代表プロフィール | Liberté FC</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="profile.css" />
+  <meta name="description" content="Liberté フランチャイズ FC本部代表 髙橋嘉人 プロフィールサイト。セルフ脱毛・セルフホワイトニングのフランチャイズ本部。" />
+  <title>Liberté FC | 髙橋嘉人 代表プロフィール</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- ===== BACK BUTTON ===== -->
-  <a href="index.html" class="back-btn" id="back-btn" aria-label="トップページへ戻る">
-    <span class="back-arrow">←</span>
-    <span>TOP</span>
-  </a>
+  <!-- ===== HERO SECTION ===== -->
+  <header class="hero" id="hero">
 
-  <!-- ===== HERO ===== -->
-  <section class="profile-hero" id="profile-hero">
-    <!-- Decorative background elements -->
-    <div class="hero-bg-circle hero-bg-circle--1"></div>
-    <div class="hero-bg-circle hero-bg-circle--2"></div>
-    <div class="hero-bg-orb"></div>
-
-    <div class="hero-inner">
-
-      <!-- Photo -->
-      <div class="hero-photo-container" id="hero-photo">
-        <div class="photo-ring photo-ring--outer"></div>
-        <div class="photo-ring photo-ring--inner"></div>
-        <div class="photo-frame">
-          <img
-            src="images/president.jpg"
-            alt="髙橋 嘉人 代表取締役"
-            class="president-photo"
-          />
-        </div>
-        <div class="photo-badge">
-          <span>FC本部代表</span>
-        </div>
-      </div>
-
-      <!-- Name & Title -->
-      <div class="hero-text" id="hero-text">
-        <p class="hero-name-en">Takahashi &nbsp; Yoshito</p>
-        <h1 class="hero-name-ja">髙橋 嘉人</h1>
-        <div class="hero-divider">
-          <span></span><span class="divider-diamond">◆</span><span></span>
-        </div>
-        <div class="hero-companies">
-          <div class="company-chip">
-            <span class="company-mark">●</span>
-            <span class="company-chip-name">株式会社 ViliV</span>
-            <span class="company-chip-role">代表取締役</span>
-          </div>
-          <div class="company-chip">
-            <span class="company-mark">●</span>
-            <span class="company-chip-name">株式会社 4410</span>
-            <span class="company-chip-role">代表取締役</span>
-          </div>
-        </div>
-      </div>
-
+    <!-- Logo strip -->
+    <div class="hero-logo-strip" id="logo-strip">
+      <img src="images/logo.png" alt="Liberté ロゴ" />
     </div>
-  </section>
 
-  <!-- ===== LOGO BAR ===== -->
-  <div class="logo-bar" id="logo-bar">
-    <img src="images/logo.png" alt="Liberté ロゴ" class="logo-bar-img" />
+    <!-- Profile card: photo + info -->
+    <div class="hero-profile" id="hero-profile">
+
+      <!-- President Photo -->
+      <div class="hero-photo-wrap" id="photo-wrap">
+        <img
+          src="images/president.jpg"
+          alt="髙橋 嘉人 代表取締役"
+        />
+      </div>
+
+      <!-- Info panel -->
+      <div class="hero-info" id="hero-info">
+        <span class="hero-title-badge">FC本部代表</span>
+
+        <div>
+          <p class="hero-name-en">Takahashi &nbsp; Yoshito</p>
+          <h1 class="hero-name-ja">髙橋 嘉人</h1>
+        </div>
+
+        <div class="hero-companies">
+          <div class="hero-company-item">
+            <span class="company-name">株式会社 ViliV</span>
+            <span class="company-role">代表取締役</span>
+          </div>
+          <div class="hero-company-item">
+            <span class="company-name">株式会社 4410</span>
+            <span class="company-role">代表取締役</span>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /.hero-profile -->
+
+    <!-- CTA Banner -->
+    <div class="hero-cta-banner" id="cta-banner">
+      まずはお気軽にお問い合わせください。
+      <strong>オンラインでのご説明も随時実施中！</strong>
+    </div>
+
+  </header>
+
+  <!-- Section separator -->
+  <div class="section-title" id="menu-title" aria-hidden="true">
+    <div class="section-title-line"></div>
+    <span class="section-title-text">MENU</span>
+    <div class="section-title-line"></div>
   </div>
 
-  <!-- ===== PROFILE BODY ===== -->
-  <main class="profile-body" id="profile-body">
+  <!-- ===== MENU GRID ===== -->
+  <main class="menu-section" id="menu-section">
+    <nav class="menu-grid" aria-label="メインメニュー">
 
-    <!-- Message from the President -->
-    <section class="profile-section reveal" id="section-message">
-      <div class="section-label">
-        <span class="label-line"></span>
-        <span class="label-text">MESSAGE</span>
-        <span class="label-line"></span>
-      </div>
-      <h2 class="section-heading">代表メッセージ</h2>
-      <div class="message-card">
-        <div class="message-quote">"</div>
-        <p class="message-text">
-          セルフ脱毛・セルフホワイトニングという新しい市場において、<br class="br-desktop" />
-          誰もが自信を持っておしゃれを楽しめる社会を作りたい。<br class="br-desktop" />
-          そのためのフランチャイズ展開に情熱を注いでいます。<br /><br />
-          オーナーさんとともに成長し、地域に根ざした事業を広げていくことが私たちの使命です。
-        </p>
-        <div class="message-sig">
-          <span class="sig-name">髙橋 嘉人</span>
-          <span class="sig-title">Liberté FC 代表</span>
+      <!-- 1: 代表プロフィール -->
+      <a href="profile.html" class="menu-card" id="card-profile" aria-label="代表プロフィール">
+        <div class="card-icon-wrap">
+          <span class="card-icon" role="img" aria-hidden="true">👔</span>
         </div>
-      </div>
-    </section>
+        <span class="card-label">代表プロフィール</span>
+      </a>
 
-    <!-- Career -->
-    <section class="profile-section reveal" id="section-career">
-      <div class="section-label">
-        <span class="label-line"></span>
-        <span class="label-text">CAREER</span>
-        <span class="label-line"></span>
-      </div>
-      <h2 class="section-heading">経歴</h2>
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <span class="timeline-year">2018</span>
-            <p class="timeline-desc">株式会社4410 設立・代表取締役就任<br /><small>Liberté 直営店・パーソナルジムの運営を開始</small></p>
-          </div>
+      <!-- 2: 加盟店紹介 -->
+      <a href="#" class="menu-card" id="card-member-lp" aria-label="加盟店紹介">
+        <div class="card-icon-wrap">
+          <span class="card-icon" role="img" aria-hidden="true">🤝</span>
         </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <span class="timeline-year">2020</span>
-            <p class="timeline-desc">株式会社ViliV 設立・代表取締役就任<br /><small>Libertéフランチャイズ本部として事業を拡大</small></p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <span class="timeline-year">2022</span>
-            <p class="timeline-desc">フランチャイズ加盟店 全国展開開始<br /><small>セルフ脱毛・セルフホワイトニングの普及に注力</small></p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <span class="timeline-year">現在</span>
-            <p class="timeline-desc">Liberté FC 本部代表として事業拡大中<br /><small>全国のオーナーと共に成長し続けています</small></p>
-          </div>
-        </div>
-      </div>
-    </section>
+        <span class="card-label">加盟店紹介</span>
+      </a>
 
-    <!-- Business -->
-    <section class="profile-section reveal" id="section-business">
-      <div class="section-label">
-        <span class="label-line"></span>
-        <span class="label-text">BUSINESS</span>
-        <span class="label-line"></span>
-      </div>
-      <h2 class="section-heading">事業について</h2>
-      <div class="business-grid">
-        <div class="biz-card">
-          <div class="biz-icon">💆</div>
-          <h3 class="biz-title">セルフ脱毛</h3>
-          <p class="biz-desc">リーズナブルかつ自分のペースで通えるセルフ脱毛サロン。全国フランチャイズ展開中。</p>
+      <!-- 3: 初期費用について -->
+      <a href="#" class="menu-card" id="card-first-store" aria-label="初期費用について">
+        <div class="card-icon-wrap">
+          <span class="card-icon" role="img" aria-hidden="true">💴</span>
         </div>
-        <div class="biz-card">
-          <div class="biz-icon">✨</div>
-          <h3 class="biz-title">セルフホワイトニング</h3>
-          <p class="biz-desc">手軽に始められるセルフホワイトニングで、笑顔に自信を。脱毛との同時展開が可能。</p>
-        </div>
-        <div class="biz-card">
-          <div class="biz-icon">🏋️</div>
-          <h3 class="biz-title">パーソナルジム</h3>
-          <p class="biz-desc">身体づくりから美容まで。4410が運営する直営ジムで理想の体を実現。</p>
-        </div>
-      </div>
-    </section>
+        <span class="card-label">初期費用について</span>
+      </a>
 
-    <!-- Contact CTA -->
-    <section class="profile-section reveal" id="section-cta">
-      <div class="cta-block">
-        <p class="cta-subtitle">フランチャイズ加盟・出店について</p>
-        <h2 class="cta-title">お気軽にご相談ください</h2>
-        <p class="cta-desc">オンラインでのご説明も随時実施中！<br />まずはお問い合わせください。</p>
-        <a href="index.html" class="cta-btn" id="cta-index-btn">
-          <span>TOP に戻る</span>
-          <span class="btn-arrow">→</span>
-        </a>
-      </div>
-    </section>
+      <!-- 4: リベルダが選ばれる理由 -->
+      <a href="#" class="menu-card" id="card-reason" aria-label="Libertéが選ばれる理由">
+        <div class="card-icon-wrap">
+          <span class="card-icon" role="img" aria-hidden="true">⭐</span>
+        </div>
+        <span class="card-label">Libertéが<br>選ばれる理由</span>
+      </a>
 
+      <!-- 5: 出店ページ -->
+      <a href="#" class="menu-card" id="card-open-store" aria-label="出店ページ">
+        <div class="card-icon-wrap">
+          <span class="card-icon" role="img" aria-hidden="true">🏬</span>
+        </div>
+        <span class="card-label">出店ページ</span>
+      </a>
+
+      <!-- 6: LP -->
+      <a href="#" class="menu-card" id="card-lp" aria-label="LP">
+        <div class="card-icon-wrap">
+          <span class="card-icon" role="img" aria-hidden="true">📋</span>
+        </div>
+        <span class="card-label">LP</span>
+      </a>
+
+      <!-- 7: HP -->
+      <a href="#" class="menu-card" id="card-hp" aria-label="HP（ホームページ）">
+        <div class="card-icon-wrap">
+          <span class="card-icon" role="img" aria-hidden="true">🌐</span>
+        </div>
+        <span class="card-label">HP</span>
+      </a>
+
+      <!-- 8: インスタ -->
+      <a href="#" class="menu-card" id="card-instagram" aria-label="Instagram">
+        <span class="badge-new">NEW</span>
+        <div class="card-icon-wrap">
+          <span class="card-icon" role="img" aria-hidden="true">📸</span>
+        </div>
+        <span class="card-label">インスタ</span>
+      </a>
+
+      <!-- 9: ライン -->
+      <a href="#" class="menu-card" id="card-line" aria-label="LINE">
+        <div class="card-icon-wrap">
+          <span class="card-icon" role="img" aria-hidden="true">💬</span>
+        </div>
+        <span class="card-label">ライン</span>
+      </a>
+
+      <!-- 10: メール -->
+      <a href="#" class="menu-card" id="card-mail" aria-label="メール">
+        <div class="card-icon-wrap">
+          <span class="card-icon" role="img" aria-hidden="true">✉️</span>
+        </div>
+        <span class="card-label">メール</span>
+      </a>
+
+      <!-- 11: 一般人への営業はこちら -->
+      <a href="#" class="menu-card" id="card-sales-general" aria-label="一般人への営業はこちら">
+        <div class="card-icon-wrap">
+          <span class="card-icon" role="img" aria-hidden="true">📢</span>
+        </div>
+        <span class="card-label">一般人への営業はこちら</span>
+      </a>
+
+      <!-- 12: 加盟店へのお知らせ -->
+      <a href="news.html" class="menu-card" id="card-contact-owner" aria-label="加盟店へのお知らせ">
+        <div class="card-icon-wrap">
+          <span class="card-icon" role="img" aria-hidden="true">🔔</span>
+        </div>
+        <span class="card-label">加盟店への<br>お知らせ</span>
+      </a>
+
+    </nav>
   </main>
 
   <!-- ===== FOOTER ===== -->
-  <footer class="profile-footer" id="profile-footer">
+  <footer id="footer">
     <img src="images/logo.png" alt="Liberté" class="footer-logo" />
     <p class="footer-text">
-      ※株式会社4410は Liberté直営店とパーソナルジムを運営<br />
-      ※株式会社ViliVは Libertéフランチャイズ本部を運営<br /><br />
+      ※株式会社4410は Liberté直営店とパーソナルジムを運営<br>
+      ※株式会社ViliVは Libertéフランチャイズ本部を運営<br><br>
       © 2024 Liberté Franchise. All rights reserved.
     </p>
   </footer>
 
-  <script src="profile.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
