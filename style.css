@@ -382,10 +382,33 @@ body {
   display: block;
 }
 
-.card-icon {
-  font-size: 1.8rem;
+.flat-icon {
+  font-size: 2.2rem;
   line-height: 1;
+  color: var(--navy-mid);
 }
+
+/* Brand & Specific Colors */
+.icon-handshake { color: #6366f1; }
+.icon-yen { color: #f59e0b; }
+.icon-star { color: #eab308; }
+.icon-store { color: #ec4899; }
+.icon-lp { color: #8b5cf6; }
+.icon-hp { color: #3b82f6; }
+
+/* Instagram Gradient */
+.icon-instagram {
+  background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* LINE Color */
+.icon-line { color: #00B900; }
+
+.icon-mail { color: #14b8a6; }
+.icon-sales { color: #f43f5e; }
+.icon-bell { color: #fbbf24; }
 
 /* Label */
 .card-label {
