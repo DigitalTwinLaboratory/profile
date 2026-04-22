@@ -29,7 +29,7 @@
       <div class="header-label">
         <span class="header-label-en">MEMBER NOTICES</span>
         <h1 class="header-title-ja">加盟店へのお知らせ</h1>
-        <p class="header-subtitle">オーナー様向けの最新情報・重要連絡をお届けします</p>
+        <p class="header-subtitle"><span style="display:inline-block;">オーナー様向けの最新情報・</span><span style="display:inline-block;">重要連絡をお届けします</span></p>
       </div>
     </div>
   </header>
@@ -46,125 +46,12 @@
   <!-- ===== MAIN NEWS LIST ===== -->
   <main class="news-main" id="news-main">
 
-    <!-- Pinned Important Notice -->
-    <article class="news-card news-card--pinned reveal" data-category="important" id="notice-001">
-      <div class="news-pin-badge">📌 重要</div>
-      <div class="news-card-inner">
-        <div class="news-meta">
-          <time class="news-date" datetime="2026-04-20">2026年4月20日</time>
-          <span class="news-tag news-tag--important">重要</span>
-        </div>
-        <h2 class="news-title">【必読】FC契約更新手続きのご案内（2026年度）</h2>
-        <p class="news-excerpt">
-          2026年度のフランチャイズ契約更新手続きについてご案内いたします。対象のオーナー様は期限内にご対応ください。詳細はLINEグループにてご共有しております。
-        </p>
-        <div class="news-footer">
-          <span class="news-read-more">続きを読む →</span>
-        </div>
+    <!-- ニュースコンテナ (JSで動的に追加) -->
+    <div id="news-container">
+      <div id="loading-state" style="text-align:center; padding:40px; color:var(--text-soft);">
+        <p>お知らせを読み込んでいます...</p>
       </div>
-    </article>
-
-    <!-- Event card -->
-    <article class="news-card reveal" data-category="event" id="notice-002">
-      <div class="news-card-inner">
-        <div class="news-meta">
-          <time class="news-date" datetime="2026-04-15">2026年4月15日</time>
-          <span class="news-tag news-tag--event">イベント</span>
-        </div>
-        <h2 class="news-title">2026年度 加盟店オーナー研修会のご案内</h2>
-        <p class="news-excerpt">
-          今年度の研修会を大阪・東京の2会場にて開催いたします。最新の機器操作研修・集客施策のシェア会を予定しております。ぜひご参加ください。
-        </p>
-        <div class="news-footer">
-          <span class="news-badge-date">📅 開催予定：2026年5月24日（土）</span>
-        </div>
-      </div>
-    </article>
-
-    <!-- Info card -->
-    <article class="news-card reveal" data-category="info" id="notice-003">
-      <div class="news-card-inner">
-        <div class="news-meta">
-          <time class="news-date" datetime="2026-04-10">2026年4月10日</time>
-          <span class="news-tag news-tag--info">お知らせ</span>
-        </div>
-        <h2 class="news-title">春のキャンペーン素材を配布いたします</h2>
-        <p class="news-excerpt">
-          4月〜5月の集客強化に向けた販促素材（SNS投稿用画像・チラシPDF）をご用意しました。LINEグループよりダウンロードしてご活用ください。
-        </p>
-        <div class="news-footer">
-          <span class="news-read-more">ダウンロードはこちら →</span>
-        </div>
-      </div>
-    </article>
-
-    <!-- Update card -->
-    <article class="news-card reveal" data-category="update" id="notice-004">
-      <div class="news-card-inner">
-        <div class="news-meta">
-          <time class="news-date" datetime="2026-04-01">2026年4月1日</time>
-          <span class="news-tag news-tag--update">アップデート</span>
-        </div>
-        <h2 class="news-title">予約管理システム v3.2 リリースのお知らせ</h2>
-        <p class="news-excerpt">
-          予約管理システムがアップデートされました。新機能として「回数券管理」「LINEリマインド自動送信」が追加されています。マニュアルはポータルサイトをご確認ください。
-        </p>
-        <div class="news-footer">
-          <span class="news-read-more">マニュアルを確認 →</span>
-        </div>
-      </div>
-    </article>
-
-    <!-- Info card -->
-    <article class="news-card reveal" data-category="info" id="notice-005">
-      <div class="news-card-inner">
-        <div class="news-meta">
-          <time class="news-date" datetime="2026-03-25">2026年3月25日</time>
-          <span class="news-tag news-tag--info">お知らせ</span>
-        </div>
-        <h2 class="news-title">Googleビジネスプロフィールの登録・更新をお願いします</h2>
-        <p class="news-excerpt">
-          集客効果向上のため、Googleビジネスプロフィールへの写真追加・営業時間更新を推奨しております。設定方法はLINEグループの資料をご参照ください。
-        </p>
-        <div class="news-footer">
-          <span class="news-read-more">詳細を確認 →</span>
-        </div>
-      </div>
-    </article>
-
-    <!-- Update card -->
-    <article class="news-card reveal" data-category="update" id="notice-006">
-      <div class="news-card-inner">
-        <div class="news-meta">
-          <time class="news-date" datetime="2026-03-18">2026年3月18日</time>
-          <span class="news-tag news-tag--update">アップデート</span>
-        </div>
-        <h2 class="news-title">脱毛機器メンテナンス手順の改訂について</h2>
-        <p class="news-excerpt">
-          機器の安全な運用を維持するため、日常メンテナンス手順書を改訂しました。旧手順書と異なる点がありますので、全オーナー様・スタッフ様にご確認をお願いします。
-        </p>
-        <div class="news-footer">
-          <span class="news-read-more">改訂版を確認 →</span>
-        </div>
-      </div>
-    </article>
-
-    <!-- Event card -->
-    <article class="news-card reveal" data-category="event" id="notice-007">
-      <div class="news-card-inner">
-        <div class="news-meta">
-          <time class="news-date" datetime="2026-03-10">2026年3月10日</time>
-          <span class="news-tag news-tag--event">イベント</span>
-        </div>
-        <h2 class="news-title">加盟店間交流会（オンライン）を開催しました</h2>
-        <p class="news-excerpt">
-          3月の交流会には20店舗以上のオーナー様にご参加いただきました。当日の資料・録画はLINEグループにてご提供しております。ありがとうございました。
-        </p>
-        <div class="news-footer">
-          <span class="news-badge-date">✅ 開催済み</span>
-        </div>
-      </div>
-    </article>
+    </div>
 
     <!-- Empty state (hidden by default, shown when no results) -->
     <div class="empty-state" id="empty-state" style="display:none;" aria-live="polite">
@@ -203,6 +90,8 @@
     </p>
   </footer>
 
+  <!-- CSV Parser -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
   <script src="news.js"></script>
 </body>
 </html>
