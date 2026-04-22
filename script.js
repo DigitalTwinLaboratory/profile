@@ -124,14 +124,51 @@ document.addEventListener('DOMContentLoaded', () => {
   // Password protection for "加盟店へのお知らせ"
   // ==========================================
   const newsCard = document.getElementById('card-contact-owner');
-  if (newsCard) {
+  const modal = document.getElementById('password-modal');
+  const modalInput = document.getElementById('modal-password-input');
+  const modalError = document.getElementById('modal-error-msg');
+  const btnCancel = document.getElementById('modal-cancel-btn');
+  const btnSubmit = document.getElementById('modal-submit-btn');
+
+  if (newsCard && modal) {
+    // Show modal
     newsCard.addEventListener('click', (e) => {
       e.preventDefault();
-      const password = prompt("加盟店専用ページです。\nパスワードを入力してください：");
+      modalError.textContent = '';
+      modalInput.value = '';
+      modal.classList.add('active');
+      setTimeout(() => modalInput.focus(), 100);
+    });
+
+    // Hide modal on cancel
+    btnCancel.addEventListener('click', () => {
+      modal.classList.remove('active');
+    });
+
+    // Check password
+    const checkPassword = () => {
+      const password = modalInput.value;
       if (password === "liberte4410") {
         window.location.href = "news.html";
-      } else if (password !== null) {
-        alert("パスワードが違います。");
+      } else {
+        modalError.textContent = "パスワードが違います。";
+      }
+    };
+
+    // Submit button click
+    btnSubmit.addEventListener('click', checkPassword);
+
+    // Enter key press
+    modalInput.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') {
+        checkPassword();
+      }
+    });
+
+    // Click outside to close
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.classList.remove('active');
       }
     });
   }
