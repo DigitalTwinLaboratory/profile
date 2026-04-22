@@ -120,4 +120,20 @@ document.addEventListener('DOMContentLoaded', () => {
   );
   document.querySelectorAll('.menu-card').forEach(c => observer.observe(c));
 
+  // ==========================================
+  // Password protection for "加盟店へのお知らせ"
+  // ==========================================
+  const newsCard = document.getElementById('card-contact-owner');
+  if (newsCard) {
+    newsCard.addEventListener('click', (e) => {
+      e.preventDefault();
+      const password = prompt("加盟店専用ページです。\nパスワードを入力してください：");
+      if (password === "liberte4410") {
+        window.location.href = "news.html";
+      } else if (password !== null) {
+        alert("パスワードが違います。");
+      }
+    });
+  }
+
 });
